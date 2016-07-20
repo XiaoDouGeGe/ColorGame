@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F06060"
     android:gravity="center_horizontal"
-    tools:context="playback.wxp.com.thecolor.MainActivity">
+    tools:context="xiaodou.colorgame.MainActivity">
 
     <!-- 游戏界面  （直接进入游戏） -->
 
@@ -20,7 +19,7 @@
         android:gravity="center"
         android:padding="8dp"
         android:text="@string/scores_0"
-        android:textSize="26dp" />
+        android:textSize="26sp" />
 
     <!-- 倒计时 60-->
     <TextView
@@ -34,10 +33,10 @@
         android:maxLines="1"
         android:padding="8dp"
         android:text="60"
-        android:textSize="26dp" />
+        android:textSize="26sp" />
 
     <!-- ColorLayout （颜色画板） -->
-    <playback.wxp.com.thecolor.ColorLayout
+    <xiaodou.colorgame.ColorLayout
         android:id="@+id/id_color_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +73,7 @@
                 android:maxLines="1"
                 android:text="@string/result_scores_0"
                 android:textColor="@color/text_color"
-                android:textSize="26dp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <!-- Your eyesight as a pig!  -->
@@ -87,7 +86,7 @@
                 android:maxLines="1"
                 android:text="@string/result_info_0"
                 android:textColor="@color/text_color"
-                android:textSize="26dp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -108,7 +107,7 @@
                 android:gravity="center"
                 android:text="@string/goton"
                 android:textColor="@color/text_color"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
             <!-- Share -->
             <Button
@@ -120,7 +119,7 @@
                 android:gravity="center"
                 android:text="@string/share"
                 android:textColor="@color/text_color"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -137,7 +136,7 @@
         android:gravity="center"
         android:text="@string/pause"
         android:textColor="@color/text_color"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
