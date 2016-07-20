@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="result_level">
+        <item>Pig</item>
+        <item>Mouse</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Eagle</item>
+        <item>Gold</item>
+    </string-array>
+    <integer-array name="colors">
+        <item>0xffffff</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="result_level">
+        <item>猪</item>
+        <item>鼠</item>
+        <item>狗</item>
+        <item>猫</item>
+        <item>鹰</item>
+        <item>神</item>
+    </string-array>
+</resources>

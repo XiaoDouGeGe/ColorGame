@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+	android:background="#F06060">
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+		
+	<Button
+        android:id="@+id/id_goon_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Go On !"
+        android:textSize="30dp" />
+		
+
+</LinearLayout>

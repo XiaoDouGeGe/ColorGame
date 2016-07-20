@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TheColor</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1315542540276142/3581295714</string>
+    <string name="testad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="intro">找出颜色不同的一个</string>
+    <string name="share_intro">快来测测你的钛合金狗眼吧！！！apk下载地址：</string>
+    <string name="start">开始</string>
+    <string name="restart">重玩</string>
+    <string name="scores_0">分数 : 0</string>
+    <string name="scores">分数 : %1$d</string>
+    <string name="pause">暂停</string>
+    <string name="pauseing">游戏暂停...</string>
+    <string name="goton">继续</string>
+    <string name="share">分享</string>
+    <string name="result_scores_0">0 分</string>
+    <string name="result_scores">%1$d 分</string>
+    <string name="result_info_0">你的视力猛如猪!</string>
+    <string name="result_info">你的视力猛如%1$s!</string>
+    <string name="result_info_best">你的视力已逆天!!!</string>
+    <string name="share_result_info_0">我的视力猛如猪!</string>
+    <string name="share_result_info">我的视力猛如%1$s!</string>
+    <string name="share_result_info_best">我的视力已超神!!!</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F06060"
+    android:gravity="center_horizontal"
+    tools:context="playback.wxp.com.thecolor.MainActivity">
+
+    <!-- 游戏界面  （直接进入游戏） -->
+
+    <!-- 得分  Scores : 0 -->
+    <TextView
+        android:id="@+id/id_scores_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/scores_0"
+        android:textSize="26dp" />
+
+    <!-- 倒计时 60-->
+    <TextView
+        android:id="@+id/id_time_tv"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/time_bg"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="60"
+        android:textSize="26dp" />
+
+    <!-- ColorLayout （颜色画板） -->
+    <playback.wxp.com.thecolor.ColorLayout
+        android:id="@+id/id_color_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#F06060" />
+
+
+    <!-- 结束界面，先隐藏，结束的时候才显示，restart()再隐藏-->
+    <!--android:visibility="gone"-->
+    <LinearLayout
+        android:id="@+id/id_ad"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#ccF06060"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/id_reslut_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <!-- X Points -->
+            <TextView
+                android:id="@+id/id_result_scores_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/result_scores_0"
+                android:textColor="@color/text_color"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <!-- Your eyesight as a pig!  -->
+            <TextView
+                android:id="@+id/id_result_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/result_info_0"
+                android:textColor="@color/text_color"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!--  Continue  -->
+            <Button
+                android:id="@+id/id_goon_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="@string/goton"
+                android:textColor="@color/text_color"
+                android:textSize="30dp" />
+
+            <!-- Share -->
+            <Button
+                android:id="@+id/id_share_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/text_color"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Pausing -->
+    <Button
+        android:id="@+id/id_pause_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="@string/pause"
+        android:textColor="@color/text_color"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
